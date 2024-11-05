@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        header{
+            background-color: cadetblue;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .container{
+            display: flex;
+        }
+
+
+        .sidebar{
+            background-color: #ddd;
+            padding: 20px;
+            width: 200px;
+        }
+
+        .sidebar ul{
+            list-style: none;
+            padding-left: 2px;
+        }
+
+        .sidebar ul li{
+            margin: 10px;
+        }
+
+        .sidebar ul li a{
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .content{
+            padding-left: 20px;
+            width: 100%;
+            background-color: white;
+        }
+
+        .content  h2{
+           margin: 25px auto; 
+        }
+
+        .content section .product{
+            border: 1px solid #c9c2c2;
+            margin-bottom: 20px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Productos</h1>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section>
+                <h2>Últimos Productos</h2>
+                <div class="product">
+                    <img src="https://picsum.photos/id/1060/300/300" alt="">
+                    <p>Descripción del Producto 1</p>
+                </div>
+                <div class="product">
+                    <img src="https://picsum.photos/id/30/300/300" alt="">
+                    <p>Descripción del Producto 2</p>
+                </div>
+                <div class="product">
+                    <img src="https://picsum.photos/id/42/300/300" alt="">
+                    <p>Descripción del Producto 3</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
